@@ -30,7 +30,7 @@ $pluginData[navaco][field][config][4][title] 	= 'عنوان خرید';
 $pluginData[navaco][field][config][4][name] 	= 'title';
 
 function callCurl($postField,$action){
-    $url = "https://fcp.shaparak.ir/nvcservice/Api/v2/";
+    $url = "http://79.174.161.132:8181/nvcservice/Api/v2/";
     $curl = curl_init();
     curl_setopt($curl, CURLOPT_URL, $url.$action);
     curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type' => 'application/json'));
